@@ -12,6 +12,12 @@ def test_roundMicroseconds():
    test_time /= 7
    test_time = roundMicroseconds(test_time)
 
+   print("test_time")
+   print(test_time)
+
+   print("ref_time")
+   print(ref_time)
+
    assert test_time == ref_time, "Other value expected"
 
 
