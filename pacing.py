@@ -10,7 +10,6 @@ def devideDateTime(time, divider):
 
    return datetime.timedelta(seconds = totals)
 
-
 def multiplyDateTime(time, mult):
    """
    Function that converts date time to a total of seconds and
@@ -69,3 +68,4 @@ def calcRevPacing(dist, minutes = 0, seconds = 0, printresult = True):
 	if (printresult == True):
 		print("Distance: " + str(dist) + "    Pace: " + str(pace) + "    Running time: " + str(time))
 	return time;
+	
