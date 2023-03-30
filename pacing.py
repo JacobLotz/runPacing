@@ -1,6 +1,6 @@
 import datetime
 
-def roundMicroseconds(time):
+def roundToSeconds(time):
    """
    Function that rounds datetime data objects to seconds.
    """
@@ -24,7 +24,7 @@ def calcPacing(dist, hours = 0, minutes = 0, seconds = 0, printresult = True):
 	pace = time/dist;
 
 	# Round
-	pace = roundMicroseconds(pace)
+	pace = roundToSeconds(pace)
 
 	if (printresult == True):	
 		print("Distance: " + str(dist) + "    Running time: " + str(time) + "    Pace: " + str(pace))
@@ -43,7 +43,7 @@ def calcRevPacing(dist, minutes = 0, seconds = 0, printresult = True):
 	time = pace*dist;
 
 	# Round
-	time = roundMicroseconds(time)
+	time = roundToSeconds(time)
 
 	if (printresult == True):
 		print("Distance: " + str(dist) + "    Pace: " + str(pace) + "    Running time: " + str(time))
