@@ -1,5 +1,26 @@
 import datetime
 
+def devideDateTime(time, divider):
+   """
+   Function that converts date time to a total of seconds and
+   performs a devision. Converts seconds back to datetime format.
+   """
+   totals  = time.total_seconds() 
+   totals /= divider
+
+   return datetime.timedelta(seconds = totals)
+
+
+def multiplyDateTime(time, mult):
+   """
+   Function that converts date time to a total of seconds and
+   performs a devision. Converts seconds back to datetime format.
+   """
+   totals  = time.total_seconds() 
+   totals *= mult
+
+   return datetime.timedelta(seconds = totals)
+
 def roundToSeconds(time):
    """
    Function that rounds datetime data objects to seconds.
@@ -21,7 +42,7 @@ def calcPacing(dist, hours = 0, minutes = 0, seconds = 0, printresult = True):
 	time = datetime.timedelta(hours = hours, minutes =  minutes, seconds = seconds)
 
 	# Velocity per km
-	pace = time/dist;
+	pace = devideDateTime(time, dist)
 
 	# Round
 	pace = roundToSeconds(pace)
@@ -40,7 +61,7 @@ def calcRevPacing(dist, minutes = 0, seconds = 0, printresult = True):
 	pace = datetime.timedelta(minutes =  minutes, seconds = seconds)
 
 	# Velocity per km
-	time = pace*dist;
+	time = multiplyDateTime(pace, dist);
 
 	# Round
 	time = roundToSeconds(time)

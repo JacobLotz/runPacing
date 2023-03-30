@@ -34,3 +34,21 @@ def test_calcRevPacing():
 	test_time = calcRevPacing(test_dist, minutes = 6, seconds = 0, printresult = False)
 
 	assert test_time == ref_time, "Other value expected"
+
+def test_devideDateTime():
+	test_time = datetime.timedelta(minutes = 30, microseconds = 30)
+	ref_time = datetime.timedelta(minutes = 8, seconds = 34, microseconds = 285723)
+
+	test_time = devideDateTime(test_time, 3.5)
+
+	assert test_time == ref_time, "Other value expected"
+
+def test_multiplyDateTime():
+	test_time = datetime.timedelta(minutes = 30, microseconds = 30)
+	ref_time = datetime.timedelta(hours = 1, minutes = 15, microseconds = 75)
+
+	test_time = multiplyDateTime(test_time, 2.5)
+
+	assert test_time == ref_time, "Other value expected"
+
+test_multiplyDateTime()
