@@ -1,12 +1,15 @@
 import datetime
 
 def roundMicroseconds(time):
-	"""
+   """
    Function that rounds datetime data objects to seconds.
-	"""
-	time += datetime.timedelta(seconds=round(time.microseconds/1000000))
-	time -= datetime.timedelta(microseconds=time.microseconds)
-	return time
+   """
+   ms = time.microseconds
+
+   if ms >= 500000:
+      time += datetime.timedelta(seconds=1)
+
+   return time - datetime.timedelta(microseconds = ms)
 
 def calcPacing(dist, hours = 0, minutes = 0, seconds = 0, printresult = True):
 	"""
