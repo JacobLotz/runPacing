@@ -33,3 +33,4 @@ pytest
 
 ## Contributions
 Contributions can be made by creating an issue on GitHub and stating the issue and a solution. If the solution is sufficient we can give the right clearance.
+
