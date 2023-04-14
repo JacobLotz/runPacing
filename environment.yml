@@ -8,4 +8,5 @@ dependencies:
       - datetime==5.1
       - pytz==2023.3
       - zope-interface==6.0
+      - pytest==4.6.9
 prefix: /home/jacob/miniconda3/envs/runPacing
