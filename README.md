@@ -15,3 +15,15 @@ python example.py
 ```
 pytest
 ```
+
+## Roadmap milestones
+- Add testing
+- Create conda environment
+- Add executable with command line options
+- Add option for input file
+- Implement snakemake
+- Create insightful visual reporting
+- Create insightful textual reporting
+
+## Contributions
+Contributions can be made by creating an issue on GitHub and stating the issue and a solution. If the solution is sufficient we can give the right clearance.
