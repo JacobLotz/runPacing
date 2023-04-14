@@ -6,6 +6,12 @@ Requires the datetime package
 
 See examply.py for example usage.
 
+## Conda environment:
+```
+conda env create -f environment.yml
+conda activate runPacing
+```
+
 ## Example run:
 ```
 python example.py
@@ -27,3 +33,4 @@ pytest
 
 ## Contributions
 Contributions can be made by creating an issue on GitHub and stating the issue and a solution. If the solution is sufficient we can give the right clearance.
+
